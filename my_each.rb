@@ -1,6 +1,7 @@
 def my_each(array) # put argument(s) here
   # code here
-  do |i|
-    puts i
-  end
+  index = 0
+  while array[index]
+    yield index
+    index += 1
 end
